@@ -1,5 +1,8 @@
 # Introduction to Hack School (Winter 2020)
 
+## Resources
+[Slides](http://acmurl.com/intro-to-hackschool-slides)
+
 ## Setup
 This is the following software you will need to install for the workshop:  
 - Download [node.js](http://acmurl.com/nodejs)
