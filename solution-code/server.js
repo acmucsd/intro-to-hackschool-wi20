@@ -41,8 +41,19 @@ app.post('/insertData', (req, res) => {
     res.redirect('/');
 });
 
+// TODO: Write a POST request to increment the price of the given flavor by 1.
+//       Once this has been done, redirect to the '/' page.
+app.post('/changeprice', (req, res) => {
+    const params = req.body;
+    const flavor = params.flavor;
+    if (flavor in iceCreams) {
+        iceCreams[flavor]++;
+    }
+    res.redirect('/');
+});
+
 // TODO: Write a GET request to retreive the recommended 
-//       ice cream flavor.
+//       ice cream flavor. Response should be in json.
 app.get('/recommendation', (req,res) => {
     // We will be returning the recommended flavor based on cheapest price.
     let min = Number.MAX_VALUE;
