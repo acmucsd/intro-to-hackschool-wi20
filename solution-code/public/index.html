@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Home Page </title>
+        <link type="text/css" rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title"> Ice Cream Store </h1>
+        <h3>Today, we recommend the <span id="flavor"></span> flavor.</h3>
+        <div class="nav">
+            <a href="/getData"> View All Flavors </a>
+            <a href="/resetData"> Reset </a>
+        </div>
+        <img src="icecream.jpg"/>
+
+        <form action="/insertData" method="POST">
+            <p>Ice Cream to Add</p>
+            <input type="text" name="flavor" value="flavor"/>
+            <input type="number" name="cost" value="1.50"/>
+            <input type="submit" value="insert"/>
+        </form>
+
+        <form action="/recommendation" method="GET">
+            <p>Grabbing a recommended flavor</p>
+            <input type="submit" value="Get a recommendation."/>
+        </form>
+    </body>
+    <script src="script.js"></script>
+</html>

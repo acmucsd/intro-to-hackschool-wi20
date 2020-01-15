@@ -25,25 +25,38 @@ let iceCreams = {
 };
 const recommended = "chocolate";
 
-// Returns the JSON of ice cream flavors along with its costs.
+// Gets all the ice creams in the array
 app.get('/getData', (req, res) => {
-
+    res.json(iceCreams);
 });
 
-// Resets the list of ice cream flavors along with its prices to be empty
-app.post('/resetData', (req, res) => {
-
+app.get('/resetData', (req, res) => {
+    iceCreams = {};
+    res.redirect('/');
 });
 
-// Inserts a key-value pair from the ice cream flavor to that flavor's cost.
+// Inserting an ice cream.
 app.post('/insertData', (req, res) => {
-
+    const params = req.body;
+    iceCreams[params.flavor] = params.cost;
+    res.redirect('/');
 });
 
-// Returns the recommended flavor of the day (finding the lowest costing item)
-// in JSON. For example, the API will have a response that looks like this:
-//  { "favorite": [cheapest flavor]}
+// TODO: Write a GET request to retreive the recommended 
+//       ice cream flavor.
 app.get('/recommendation', (req,res) => {
     // We will be returning the recommended flavor based on cheapest price.
+    let min = Number.MAX_VALUE;
+    let flavor = "";
+    for (let i in iceCreams) {
+        if (iceCreams[i] < min) {
+            min = iceCreams[i];
+            flavor = i;
+        };
+    };
+    const response = {
+        "favorite": flavor
+    };
+    res.json(response);
 });
 

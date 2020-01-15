@@ -1,0 +1,27 @@
+* {
+    font-family: "Comic Sans MS", Calibri;
+    text-align: center;
+}
+
+body {
+    background-color: lightblue;
+}
+
+#flavor {
+    font-style: italic;
+}
+
+.nav {
+    border: solid 1px;
+    display: flex;
+    padding: 5px;
+    justify-content: space-evenly;
+}
+
+.nav > a:hover {
+    background-color: yellow;
+}
+
+img {
+    margin: 5px;
+}
