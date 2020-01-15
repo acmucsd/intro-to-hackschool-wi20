@@ -23,7 +23,6 @@ let iceCreams = {
     "chocolate": 1.50,
     "vanilla": 1.50
 };
-const recommended = "chocolate";
 
 // Gets all the ice creams in the array
 app.get('/getData', (req, res) => {

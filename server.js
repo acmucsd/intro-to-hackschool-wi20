@@ -23,7 +23,6 @@ let iceCreams = {
     "chocolate": 1.50,
     "vanilla": 1.50
 };
-const recommended = "chocolate";
 
 // Returns the JSON of ice cream flavors along with its costs.
 app.get('/getData', (req, res) => {

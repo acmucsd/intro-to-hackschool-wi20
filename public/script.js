@@ -3,8 +3,9 @@ fetch("http://localhost:3001/recommendation?", {
     headers: {
         'Content-Type': 'application/json'
     },
-}).then((response) => response.json())
-    .then(data => {
+})
+.then((response) => response.json())
+.then(data => {
         console.log(data);
         const headingEl = document.querySelector("#flavor");
         headingEl.innerHTML = data["favorite"];
