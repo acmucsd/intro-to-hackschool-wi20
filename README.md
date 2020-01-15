@@ -1,4 +1,6 @@
-# Introduction to Hack School (Winter 2020)
+# ACM x SWE: Introduction to Hack School (Winter 2020)
+
+This workshop is meant to be an introduction to things you can learn by attending the rest of the Hack School workshops! 
 
 ## Resources
 [Slides](http://acmurl.com/intro-to-hackschool-slides)
@@ -56,7 +58,7 @@ Defines a form, encapsulating data with all input tags inside. The form data can
 Holds any metadata that goes in a webpage. This can include the website title, or any Javascript or CSS that the website requires. 
 
 ## HTML Attributes
-HTML attributes provide more information about an element using a key-value pair. Above, we mentioned the *src* attribute in the **img** tag, which is used to specify which image we will display. Another important attribute is the *href* attribute, which is important in the **a** tag as it specifies which hyperlink to link to. We will talk about other important attributes below.
+HTML attributes provide more information about an element using a key-value pair. Above, we mentioned the *src* attribute in the **img** tag, which is used to specify which image we will display. Another important attribute is the *href* attribute, which is important in the **a** tag as it specifies which hyperlink to link to. We will talk about other important attributes below (most important is *class* and *id*).
 
 ## Intro to Javascript
 We define functions using either the `functions` keyword or arrow notation: 
@@ -124,7 +126,53 @@ In the '/insertData' endpoint, the parameters (flavor and cost) are retreived an
 ## TODOs:
 Now, work on the '/changeprice' and '/recommendation' APIs. The description of these endpoints are found in the starter-code as a TODO comment. Try filling in the blanks yourself!
 
+Once you have finished this, go into the 'public/index.html' file and below the end of the body tag, type in the following line:
+```html
+<script src="script.js"></script>
+```
+
 ## CSS
+CSS stands for Cascading Style Sheets. Each CSS document contains instructions for how to style different elements in a webpage. We select these elements with what are called "selectors", and we can set different properties for the selected elements.
 
+A typical CSS document would look something like this: 
+```css
+/* these are selectors! */
+h1 {
+  font-family: Nunito, "sans-serif";
+  background-color: #64bef1;
+}
 
-## Resources
+p {
+  font-family: Roboto, "sans-serif"; 
+}
+```
+Any HTML document that links to this CSS file will have `<h1>` and `<p>` tags with these attributes. 
+
+### Different Ways of Styling
+There are three main ways of styling an HTML document.
+- Inline Styling (uses a style attribute in each element to specify)
+- Internal Styling (uses the style tag in the head which outlines all the CSS properties)
+- External Styling (uses a separate .css file to style the document)
+
+**We will mainly be using external styling to style our document.**
+
+### Selectors 
+As shown before, one way of selecting elements is just by indicating the tag name. However, we can limit the elements which we use and specify any particular element in the DOM by describing where the element is in relation to others. A comprehensive list can be found [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors), though below are a few examples.
+
+#### Class Selector
+Selects elements of the given class. For example, `.hackschool` will select every element with the class attribute set to "hackschool". 
+
+#### ID Selector
+Selects elements of the given class. For example, `#navbar` will select every element with the id attribute set to "navbar".
+
+#### Descendant Selector
+Simply place the parent element before the child element you want to select. For example, `div img` will select all `<img>` tags inside any `<div>` tag.
+
+#### Direct Descendant Selector
+Denoted by a `>` symbol. For instance, `div > img` will only select `<img>` tags that are an immediate child of a `<div>` tag. 
+
+## More TODOs
+Mess around with the CSS styling and try to get the website to look like the solution code! This is your time to experiment with CSS to understand the different things we can do.
+
+## You're done!
+Congratulation! You have now made an awesome ice cream store using HTML, CSS, and Javascript. We hope you will want to learn more by coming out to the rest of our Hack School workshops!
