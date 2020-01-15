@@ -2,6 +2,33 @@
 
 This workshop is meant to be an introduction to things you can learn by attending the rest of the Hack School workshops! 
 
+- [ACM x SWE: Introduction to Hack School (Winter 2020)](#acm-x-swe-introduction-to-hack-school-winter-2020)
+  - [Resources](#resources)
+  - [Setup](#setup)
+  - [What is HTML?](#what-is-html)
+    - [Paragraph Tag](#paragraph-tag)
+    - [Heading Tag](#heading-tag)
+    - [Image Tag](#image-tag)
+    - [Hyperlink Tag](#hyperlink-tag)
+    - [Form tag](#form-tag)
+    - [Head tag](#head-tag)
+  - [HTML Attributes](#html-attributes)
+  - [Intro to Javascript](#intro-to-javascript)
+  - [What is a server?](#what-is-a-server)
+  - [Before we get started...](#before-we-get-started)
+  - [Code!](#code)
+    - [The Basics](#the-basics)
+  - [TODOs:](#todos)
+  - [CSS](#css)
+    - [Different Ways of Styling](#different-ways-of-styling)
+    - [Selectors](#selectors)
+      - [Class Selector](#class-selector)
+      - [ID Selector](#id-selector)
+      - [Descendant Selector](#descendant-selector)
+      - [Direct Descendant Selector](#direct-descendant-selector)
+  - [More TODOs](#more-todos)
+  - [You're done!](#youre-done)
+
 ## Resources
 [Slides](http://acmurl.com/intro-to-hackschool-slides)
 
